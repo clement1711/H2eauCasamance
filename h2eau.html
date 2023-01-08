@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>H2eau Casamance</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row justify-content-between text-center p-2">
+        <div
+          class="logo col-md-2 d-flex justify-content-center align-items-center"
+        >
+          <a href="h2eau.html"
+            ><img
+              src="logo.jpg"
+              alt="logo"
+              height="150px"
+              width="150px"
+              class="rounded-circle"
+          /></a>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <h1>H² eau Casamance</h1>
+        </div>
+        <div class="col-sm-1"></div>
+      </header>
+      <div class="row">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <div class="container-fluid navigation">
+            <div class="btn-group bg-info rounded-1">
+              <button
+                class="btn dropdown-toggle text-white"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <a class="navbar-brand" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    fill="currentColor"
+                    class="bi bi-list"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                  </svg>
+                </a>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark bg-primary menu">
+                <li>
+                  <a class="dropdown-item text-white" href="h2eau.html"
+                    >Accueil</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="evenement.html"
+                    >Evénement</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="le voyage.html"
+                    >Voyage</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="financement.html"
+                    >Financement</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto px-2">
+                <li class="nav-item">
+                  <a class="nav-link active" href="h2eau.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="evenement.html">Evénement</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="le voyage.html">Voyage</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="financement.html">Financement</a>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary bg-info mx-3 don-btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#demo"
+            >
+              Faire un don
+            </button>
+            <span class="navbar-text">
+              <button
+                type="button"
+                class="btn btn-primary btn-contact"
+                data-bs-toggle="modal"
+                data-bs-target="#email"
+              >
+                Contact
+              </button>
+            </span>
+            <div
+              class="modal fade"
+              id="email"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="emailTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="emailTitle">Conactez-nous !</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Sur facebook:
+                      <a href="https://www.facebook.com/hdeuxeau.casamance"
+                        >https://www.facebook.com/hdeuxeau.casamance</a
+                      >
+                      ou par e-mail:
+                      <a href="corbiere.clement@hotmail.com"
+                        >corbiere.clement@hotmail.com</a
+                      >
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fermer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div
+        id="demo"
+        class="collapse bg-info text-white rounded-2 py-2 fs-5 don"
+      >
+        <p class="text-center fw-bold fs-2 don-title">
+          Faite un don pour l'entretient de la
+          <strong>station de potabilisation</strong> !
+        </p>
+        <form action="contact.php" method="post">
+          <div class="row p-3">
+            <div class="col-12 col-md-2 my-2">
+              <label for="">Je veux faire un</label>
+            </div>
+            <div class="col-6 my-2 col-md-2">
+              <select name="PaymentScheduleId">
+                <option value="6432" selected>don ponctuel</option>
+                <option value="6433">don régulier</option>
+              </select>
+            </div>
+            <div class="col-12 my-2 col-md-1">
+              <label for="text">de</label>
+            </div>
+            <div class="col-6 my-2 col-md-3">
+              <input
+                type="number"
+                pattern="[0-9]*"
+                inputmode="decimal"
+                class="form-control"
+                name="AmountText"
+                placeholder="montant"
+              />
+            </div>
+            <div class="col-6 my-2 col-md-1">
+              <select name="CurrencyId">
+                <option value="6110" selected>€</option>
+                <option value="6111" selected>$</option>
+              </select>
+            </div>
+            <div class="col my-2 text-center col-md-3">
+              <button
+                class="btn btn-secondary btn-contact btn-gradient btn-block"
+                type="submit"
+                title="merci !"
+              >
+                Faire un don
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="fw-bold alert alert-info my-2 alert-dismissible">
+        <p>
+          L'association a été créée le 13 octobre 2008 par une partie des élèves
+          du lycée de l'Alba (Dordogne) en classe de Première Bac Pro "Industrie
+          des Procédés" sous le statut d'Association Temporaire d'Enfants et
+          jeunes Citoyens (ATEC) avec le soutient des Francas (24). Cette
+          association a pour but de créer, de fabriquer ainsi que d'implanter
+          dans l'écovillage de Koubanack en Casamance (Sénégal), une mini
+          station de potabilisation qui fonctionnera à l'aide d'énergies
+          renouvelables telles que l'énergie éolienne et l'énergie solaire.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col col-md-10">
+          <main class="container-fluid pb-2">
+            <div class="row">
+              <section class="col-md-6 my-3">
+                <h2>NAISSANCE D'UN PROJET</h2>
+                <div class="card">
+                  <img
+                    src="photo1.jpg"
+                    class="card-img-top rounded-3"
+                    alt="entrée du village"
+                    height=""
+                    width="50%"
+                  />
+                  <div class="card-body text-start bg-info">
+                    <h5 class="card-header">NAISSANCE DU PROJET</h5>
+                    <br />
+                    <p class="card-text">
+                      Le projet a été initié après un contact avec Mme
+                      Marie-Laure Labrot (originaire de dordogne et vivant 6
+                      mois par an en Casamance) lors de la semaine de la
+                      solidarité, qui nous a parlé de l'écovilage de Koubanack.
+                      Cet écovillage est en plein essor (fours solaires,
+                      toilettes sèches, mise en place de verger, avec dans le
+                      futur la transformation des fruits récoltés,...). Ce
+                      village a un puit qui ne dispose pas de système de pompage
+                      et il n'y a pas du tout d'électricité dans l'écovillage.
+                      <br />
+                      L'intérêt de ce projet est qu'il englobe également la
+                      partie formation des habitants afin de leur donner une
+                      autonomie pour réaliser de nouvelles productions.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section class="col-md-6 my-3">
+                <h2>LES OBJECTIFS DU PROJET</h2>
+                <div class="card">
+                  <img src="photo2.jpg" class="card-img-top rounded-3" alt="" />
+                  <div class="card-body text-start bg-info">
+                    <h5 class="card-header">ACTION A REALISER</h5>
+                    <br />
+                    <p class="card-text">
+                      Les objectifs de cette action sont de :
+                    </p>
+                    <ul class="list">
+                      <li>
+                        Concevoir une installation de traitement de
+                        potabilisation mobile fonctionnant avec les énergies
+                        renouvelables (éolienne et cellules photovoltaïques).
+                      </li>
+                      <li>
+                        L'implanter, avec l'aide du G.I.E (Groupement d'Intérêt
+                        Economique), dans l'écovillage de Koubanack situé en
+                        Casamance, au Sénégal.
+                      </li>
+                      <li>
+                        Aider à la formation des villageois sur son utilisation
+                        et sa conception pour qu'ils puissent travailler en
+                        autonomie.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="row fw-bold alert alert-info m-2 alert-dismissible">
+              <p>
+                Un objectif complémentaire très important, en coopération avec
+                le lycée de l'Alba, s'est normalement inserer. Il s'agit de
+                sensibiliser les autres élèves au fait que le concept du
+                développement durable n'est pas uniquement guidé par des
+                considérations économiques, mais également par des exigences
+                sociales et écologique. Nous avons décidé de monter une
+                association de type ATEC (Association Temporaire de jeunes et
+                d'Elèves Citoyens) en coopération avec les Francas de Dordogne.
+                <br />
+              </p>
+              <p>
+                Notre association porte le nom de :
+                <strong>"H²eau Casamance"</strong>.
+              </p>
+            </div>
+          </main>
+        </div>
+        <aside class="col-md-2 mt-2 partenaires">
+          <h4>Partenaires:</h4>
+          <div class="list-group list-group-flush text-center">
+            <a
+              href="https://francas-24.wixsite.com/asso"
+              class="list-group-item list-group-item-action"
+              target="_blank"
+            >
+              <img src="Les-francas.jpg" width="100%" height="100%" />
+            </a>
+            <a
+              href="https://drdjscs.gouv.fr/"
+              class="list-group-item list-group-item-action"
+              target="_blank"
+            >
+              <img src="depart.jfif" height="100%" width="100%" />
+            </a>
+            <a
+              href="https://www.bergerac.fr"
+              class="list-group-item list-group-item-action"
+              target="_blank"
+            >
+              <img src="bergerac.jpg" height="100%" width="100%" />
+            </a>
+            <a
+              href="https://eau-grandsudouest.f"
+              class="list-group-item list-group-item-action"
+              target="_blank"
+            >
+              <img src="adour.jpg" height="100%" width="100%" />
+            </a>
+            <a
+              href="https://www.service.eau.veolia.fr/home.html"
+              class="list-group-item list-group-item-action"
+              target="_blank"
+            >
+              <img src="veolia.png" height="100%" width="100%" />
+            </a>
+            <a
+              href="https://www.nouvelle-aquitaine.fr"
+              class="list-group-item list-group-item-action"
+              target="_blank"
+            >
+              <img src="conseil-regional.jpg" height="100%" width="100%" />
+            </a>
+            <a
+              href="https://www.dordogne.fr"
+              class="list-group-item list-group-item-action"
+              target="_blank"
+            >
+              <img src="conseil-général.jpg" height="100%" width="100%" />
+            </a>
+            <a
+              href="https://bergerac-cyrano.rotaryd1740.org"
+              class="list-group-item list-group-item-action"
+              target="_blank"
+            >
+              <img src="rotary.png" height="100%" width="100%" />
+            </a>
+
+            <a
+              href="https://www.saurclient.fr"
+              class="list-group-item list-group-item-action"
+              target="_blank"
+            >
+              <img src="saur.jpg" height="100%" width="100%" />
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer class="container-fluid">
+      <div class="row my-2">
+        <div
+          class="col footer d-flex justify-content-center align-items-center"
+        >
+          <a href="https://www.facebook.com/hdeuxeau.casamance" target="_blank"
+            ><img src="fb.png" alt="facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

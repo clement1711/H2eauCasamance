@@ -1,0 +1,79 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+}
+h1 {
+  color: blue;
+  font-size: 4em;
+  font-family: Copperplate, Papyrus, fantasy;
+  text-shadow: 4px 2px 6px gray;
+}
+main {
+  background: linear-gradient(50deg, orange, white);
+  width: 100%;
+}
+
+header {
+  background: linear-gradient(45deg, green, yellow, red);
+}
+.footer {
+  height: 50px;
+  width: auto;
+  background: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+  .partenaires {
+    display: none;
+  }
+  .don {
+    background: url(don1.jpg);
+    background-size: cover;
+  }
+  .don-btn {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .don {
+    background: url(don11.JPG);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 576px) {
+  .btn-group {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .rounded-circle {
+    height: 75px;
+    width: 75px;
+  }
+  .navigation {
+    flex-direction: column;
+    display: flex;
+  }
+  h1 {
+    font-size: xx-large;
+  }
+}
+.btn-contact:hover,
+.btn-contact:focus {
+  transform: scale(1.2, 1.2);
+  background: rgb(240, 163, 19);
+}
+.nav-link:hover,
+.nav-link:focus {
+  transform: scale(1.1, 1.1);
+}
+.don-title {
+  background: rgb(119, 199, 119);
+  opacity: 0.8;
+}
