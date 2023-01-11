@@ -11,7 +11,7 @@ h1 {
   color: blue;
   font-size: 4em;
   font-family: Copperplate, Papyrus, fantasy;
-  text-shadow: 4px 4px gray;
+  text-shadow: 4px 2px gray;
 }
 main {
   background: linear-gradient(50deg, orange, white);
