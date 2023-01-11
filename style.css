@@ -11,7 +11,7 @@ h1 {
   color: blue;
   font-size: 4em;
   font-family: Copperplate, Papyrus, fantasy;
-  text-shadow: 4px 2px 6px gray;
+  text-shadow: 4px 4px gray;
 }
 main {
   background: linear-gradient(50deg, orange, white);
@@ -76,4 +76,7 @@ header {
 .don-title {
   background: rgb(119, 199, 119);
   opacity: 0.8;
+}
+.agir {
+  text-shadow: 2px 3px gray;
 }

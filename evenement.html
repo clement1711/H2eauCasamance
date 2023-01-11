@@ -164,7 +164,7 @@
           />
         </div>
         <div class="col-sm-10">
-          <h3 class="fw-bold">Envie d'agir !</h3>
+          <h3 class="fw-bold agir">Envie d'agir !</h3>
           <p>
             Cela fait une dizaine d'années que notre projet a abouti avec succès
             et nous souhaitons partager notre expérience pour montrer aux gens
@@ -178,7 +178,7 @@
           L'association "H²eau Casamance" vous invite à son événement:
           "L'Afrique et l'eau: enjeux et solution".
         </h5>
-        <div class="col-sm-6 mt-2">
+        <div class="col-sm-6 mt-4">
           <p>
             Le continent africain est confronté à de nombreux défis en matière
             d'accès à l'eau potable et à des conditions d'assainissement
@@ -204,7 +204,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-6 mt-2">
+        <div class="col-sm-6 mt-4 border-start">
           <h5>Programme:</h5>
           <dl class="row">
             <dt class="col-sm-3">.09h00-09h30:</dt>
@@ -216,7 +216,7 @@
             <dt class="col-sm-3">.10h30-11h15:</dt>
             <dd class="col-sm-9">
               Table ronde 1: "Initiatives locales pour l'accès à l'eau potable:
-              les cas de la région de Casamance""
+              les cas de la région de Casamance"
             </dd>
             <dt class="col-sm-3">.11h15-11h30:</dt>
             <dd class="col-sm-9">Pause</dd>
@@ -240,6 +240,119 @@
             <dt class="col-sm-3">.15h00-15h15:</dt>
             <dd class="col-sm-9">Conclusion et remerciements</dd>
           </dl>
+        </div>
+        <div class="col-sm-6 border-end">
+          <form action="/action_page.php" method="post">
+            <legend>Formulaire d'inscription</legend>
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="nameHelp"
+                placeholder="Entrer votre nom complet"
+              />
+              <small id="nameHelp" class="form-text text-muted">
+                Veuillez entrer votre nom complet tel qu'il apparaît sur votre
+                pièce d'identité.
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="first-name">Prénom</label>
+              <input
+                type="text"
+                class="form-control"
+                id="first-name"
+                aria-describedby="first-nameHelp"
+                placeholder="Entrer votre prénom complet"
+              />
+              <small id="first-nameHelp" class="form-text text-muted">
+                Veuillez entrer votre prénom tel qu'il apparaît sur votre pièce
+                d'identité.
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse e-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="e-mail"
+                aria-describedby="emailHelp"
+                placeholder="Entrer votre adresse e-mail"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >Nous utiliserons cette adresse pour vous envoyer une
+                confirmation d'inscription.</small
+              >
+            </div>
+
+            <legend>Etes-vous déjà partie en Afrique ?</legend>
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="answer"
+                id="option 1"
+              />
+              <label class="form-check-label" for="option 1">OUI</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="answer"
+                id="option 2"
+                checked
+              />
+              <label class="form-check-label" for="option 2">NON</label>
+            </div>
+            <div class="form-group">
+              <label for="comment">Laissez nous un commentaire:</label>
+              <textarea
+                name="text"
+                id="comment"
+                rows="5"
+                class="form-control"
+                placeholder="Faîtes-nous partager vos expériences, vos idées ou vos suggestions."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary m-2 d">
+              Envoyer
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="col-sm-6 text-center">
+          <div class="alert alert-success col-12 mt-5">
+            <h4>Venez nombreux !</h4>
+            <p>L'objectif est d'arriver à une centaine de personne !</p>
+
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped bg-success"
+                role="progressbar"
+                style="width: 65%"
+                aria-valuenow="65"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                65 / 100 personnes
+              </div>
+            </div>
+          </div>
+          <img src="Orangerie.jpg" alt="" class="img-fluid mt-sm-4 mb-2" />
         </div>
       </div>
     </main>
